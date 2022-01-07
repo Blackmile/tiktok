@@ -12,9 +12,42 @@
 }
 
 .foots_attri > p {
-     padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.foots_attri > h1 {
+.foots_attri > h4 {
     padding-bottom: 20px;
+}
+
+.Icon_icon {
+    position: absolute;
+}
+
+.ticker {
+    height: fit-content;
+    margin-left: 30px;
+    width: 60%;
+}
+
+.spinner {
+    height: 50px;
+    width: 50px;
+    bottom: -35px;
+    right: 10px;
+    position: absolute;
+}
+
+img {
+    animation: spinTheRecord infinite 5s linear;
+    width: 50%;
+    filter: invert(1);
+}
+
+@keyframes spinTheRecord {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
