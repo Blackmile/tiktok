@@ -2,7 +2,7 @@
     position: relative;
     color: white;
     bottom: 150px;
-    margin-left: 40px;
+    margin-left: 20px;
     display: flex;
 }
 
@@ -21,11 +21,12 @@
 
 .Icon_icon {
     position: absolute;
+    margin-left: -20px;
 }
 
 .ticker {
-    height: fit-content;
-    margin-left: 30px;
+    height: max-content;
+    /* margin-left: -20px; */
     width: 60%;
 }
 
