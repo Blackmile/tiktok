@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 import Footer from './footer';
 import Sidebar from './sidebar';
-import video1 from './vids/cf099a1d8fc34a30b6de327211fc72d6.mp4';
 import './Video.css';
 
-function Video() {
+function Video({ url, channel, description, song, likes, messages, shares }) {
     const videoRef = useRef(null);
     const [playing, setPlaying] = useState(false);
 
@@ -24,10 +23,14 @@ function Video() {
             onClick={handleVids}
             ref={videoRef}
             muted
-            className="video_player" src={video1} />
+            className="video_player" src={url} />
             
-            <Footer />
-
+            <Footer
+                channel={channel}
+                description={description}
+                song={song}
+            />
+            <Sidebar likes={likes} shares={shares} messages={messages} />
         </div>
     )
 }
